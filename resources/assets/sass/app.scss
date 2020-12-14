@@ -1,0 +1,235 @@
+// @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "vars.scss";
+@import "sweetalert";
+$footerHeight : 145px;
+$footerHeightReverse : -145px;
+$hoverBackgroundColor : #eeeeee;
+$fontColor : #777777;
+$borderDefaultColor : #e7e7e7;
+
+html, body{
+  height      : 100%;
+  font-family : Lato, sans-serif;
+  color       : $fontColor;
+}
+p.big-text{
+  font-size : 17px;
+}
+a.big-text{
+  font-size : 17px;
+}
+.notable-vertical-margin{
+  margin-top    : 50px;
+  margin-bottom : 50px;
+}
+.button-line-height{
+  line-height : 35px;
+}
+nav ul{
+  padding-left : 0;
+  list-style   : none;
+}
+#wrap{
+  min-height : 100%;
+  //margin     : 0 auto $footerHeightReverse auto;
+}
+#push{
+  //height : $footerHeight;
+}
+.navbar{
+  border-radius : 0;
+}
+.navbar-brand{
+  font-size : 20px;
+}
+.navbar-default .navbar-nav > li > a{
+  color     : $fontColor;
+  font-size : 15px;
+}
+footer{
+  width            : 100%;
+  //height           : $footerHeight;
+  border-top       : 1px solid $borderDefaultColor;
+  background-color : #f8f8f8;
+}
+.footer-actions{
+  padding-top : 10px;
+}
+.footer-actions a{
+  color           : $fontColor;
+  text-decoration : underline;
+}
+.creator{
+  padding-top    : 10px;
+  padding-bottom : 10px;
+  text-align     : center;
+  font-size      : 17px;
+}
+.creator a{
+  color : #777777;
+}
+.row.option{
+  margin-top    : 15px;
+  margin-bottom : 15px;
+}
+.banner-on-main{
+  padding       : 30px 0;
+  border-bottom : 1px solid $borderDefaultColor;
+  h2{
+    font-size  : 63px;
+    text-align : center;
+  }
+  & strong{
+    font-size   : 70px;
+    font-weight : 400;
+    line-height : 80px;
+  }
+  & p{
+    line-height : 25px;
+    margin-top  : 20px;
+    font-size   : 15px;
+  }
+}
+.project-goal{
+  margin-top     : 20px;
+  margin-bottom  : 20px;
+  padding-bottom : 30px;
+  font-size      : 20px;
+  text-align     : center;
+  border-bottom  : 1px solid $borderDefaultColor;
+  border-top     : 1px solid $borderDefaultColor;
+  h2{
+    padding-top    : 0px;
+    padding-bottom : 20px;
+    font-size      : 63px;
+  }
+}
+.modules-created{
+  font-size     : 50px;
+  text-align    : center;
+  border        : 2px solid $borderDefaultColor;
+  border-radius : 5px;
+  margin-top    : 20px;
+  margin-bottom : 100px;
+}
+.modules-created strong{
+  font-size : 55px;
+}
+.project-pulse-on-main{
+  h2{
+    text-align     : center;
+    padding-top    : 0px;
+    padding-bottom : 20px;
+    font-size      : 63px;
+  }
+}
+a.you-can-change{
+  border-bottom : 1px dashed;
+  padding       : 3px;
+  border-radius : 5px;
+  white-space   : pre;
+  &:hover{
+    text-decoration : none;
+    background      : $hoverBackgroundColor;
+  }
+}
+//.draggable{
+//  cursor         : pointer;
+//  padding-top    : 2px;
+//  padding-bottom : 2px;
+//  &:hover, &:focus{
+//    background : $hoverBackgroundColor;
+//  }
+//}
+.text-center{
+  text-align : center;
+}
+.no-margin{
+  margin : 0;
+}
+.not-exist{
+  color   : #cccccc;
+  opacity : 0.7;
+}
+.progressive-way-menu .badge{
+  padding : 3px 4px;
+}
+.badge.success{
+  background-color : #3c763d;
+}
+.list-group-item{
+  line-height : 34px;
+}
+.oplata-table{
+  font-size     : 20px;
+  margin-top    : 20px;
+  margin-bottom : 20px;
+}
+.oplata-table > tbody > tr > th, .oplata-table > tbody > tr > td{
+  border : none;
+}
+.welcome-block{
+  text-align  : center;
+  font-size   : 20px;
+  font-family : 'Roboto', sans-serif;
+  margin      : 150px 0px;
+  @include breakpoint(mobile){
+    margin : 15px 0px;
+  }
+}
+.welcome-block h1{
+  font-size : 55px;
+}
+.welcome-block p{
+  margin : 30px 0px;
+}
+.welcome-block .btn{
+  font-size     : 30px;
+  margin-bottom : 10px;
+}
+.footer-menu{
+  margin-top    : 20px;
+  margin-bottom : 20px;
+}
+.footer-menu a{
+  color           : $fontColor;
+  text-decoration : underline;
+}
+.popover{
+  min-width : 300px;
+}
+.socset-share{
+  margin-top    : 20px;
+  margin-bottom : 20px;
+}
+.xs-margin-bottom{
+  @include breakpoint(mobile){
+    margin-bottom : 5px;
+  }
+}
+.navbar-nav > li button{
+  padding-top    : 14px;
+  padding-bottom : 14px;
+}
+.project-pulse-post h3{
+  font-weight : bold;
+}
+#loader-overlay{
+  position   : fixed;
+  z-index    : 10000;
+  background : #ffffff;
+  top        : 0;
+  left       : 0;
+  bottom     : 0;
+  right      : 0;
+  opacity    : 0.8;
+}
+#loader{
+  z-index          : 10001;
+  background-image : url('/img/loader.gif');
+  width            : 100px;
+  height           : 100px;
+  position         : absolute;
+  left             : 45%;
+  top              : 45%;
+}

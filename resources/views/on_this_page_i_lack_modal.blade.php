@@ -1,0 +1,68 @@
+<a href="#"
+   data-toggle="modal"
+   data-target="#on_this_page_i_lack_modal">{{ trans('feedback.on_this_page_i_lack') }}</a>
+<div class="modal fade"
+     tabindex="-1"
+     role="dialog"
+     id="on_this_page_i_lack_modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title">{{ trans('feedback.on_this_page_i_lack_title') }}</h4>
+            </div>
+            <div class="modal-body">
+                <form method="post"
+                      action="{{ action('FeedbackController@sendILackSmthForm') }}">
+                    {{ csrf_field() }}
+                    <input type="hidden"
+                           name="page"
+                           value="{{ Request::url() }}">
+                    <input type="hidden"
+                           name="hint"
+                           value="">
+                    <div class="form-group">
+                        <label for="email">{{ trans('feedback.on_this_page_i_lack_email') }}</label>
+                        <input class="form-control"
+                               name="email"
+                               id="email"
+                               type="email"
+                               placeholder="{{ trans('feedback.on_this_page_i_lack_why_email') }}"
+                               required>
+                    </div>
+                    <div class="form-group">
+                        <label for="text">{{ trans('feedback.on_this_page_i_lack_text') }}</label>
+                        <textarea class="form-control"
+                                  name="text"
+                                  id="text"
+                                  rows="10"
+                                  required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"
+                                       name="personal_info_agreement"
+                                       id="personal_info_agreement"
+                                       checked
+                                       required>
+                                {!! trans('feedback.i_agree_with_personal_info_agreement', ['polzovatelskoe_soglashenie_link' => action('HtmlPagesController@personal_info_agreement'),'politika_konfidencialnosti_link' => action('HtmlPagesController@politika_konfidencialnosti')]) !!}
+                            </label>
+                        </div>
+                    </div>
+                    <button type="submit"
+                            class="btn btn-primary"
+                            name="send">{{ trans('app.send') }}
+                    </button>
+                </form>
+                <br>
+                <p>{{ trans('feedback.on_this_page_i_lack_desc') }}</p>
+            </div>
+        </div>
+    </div>
+</div>

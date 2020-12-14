@@ -1,0 +1,68 @@
+<?php
+
+return [
+	'site_name'        => 'Конструктор модулей',
+	'meta_title'       => 'Конструктор модулей - Помощник в создании модулей для Битрикс',
+	'meta_description' => 'Помогает создать модуль с нуля, расширять и поддерживать его функционал,
+меньше задумываясь о коде. Бесплатно!',
+	'site_developer'   => 'Разработчик сервиса Федоров Борька',
+	'thanks_for_using' => 'Спасибо что используете сервис',
+
+	'link_to_use_cases_articles_title'      => 'Примеры использования',
+	'link_to_about_service_articles_title'  => 'О сервисе',
+	'link_to_info'                          => 'Информация',
+	'link_to_oplata'                        => 'Оплата',
+	'link_to_should_i_pay'                  => 'Нужно ли платить?',
+	'link_to_contacts'                      => 'Контакты',
+	'link_to_requisites'                    => 'Реквизиты',
+	'link_to_auth_title'                    => 'Авторизация',
+	'link_to_reg_title'                     => 'Регистрация',
+	'link_to_personal_title'                => 'Личный кабинет',
+	'link_to_logout_title'                  => 'Выйти',
+	'link_functional_suggestions_title'     => 'Предложения по функционалу',
+	'link_project_help_title'               => 'Помощь проекту',
+	'link_project_pulse_title'              => 'Пульс проекта',
+	'link_personal_info_agreement_title'    => 'Соглашение на обработку данных',
+	'link_politika_konfidencialnosti_title' => 'Политика в отношении обработки данных',
+
+	'bitrix_module' => 'Модуль',
+	'file'          => 'Файл',
+
+	'yes'  => 'Да',
+	'no'   => 'Нет',
+	'menu' => 'Меню',
+
+	'select'    => 'Выберите',
+	'save'      => 'Сохранить',
+	'add'       => 'Добавить',
+	'create'    => 'Создать',
+	'download'  => 'Скачать',
+	'upload'    => 'Загрузить',
+	'edit'      => 'Редактировать',
+	'change'    => 'Изменить',
+	'send'      => 'Отправить',
+	'delete'    => 'Удалить',
+	'import'    => 'Импортировать',
+	'check_all' => 'Отметить все',
+
+	'not-exist'    => 'Отсутствует',
+	'not-exist_pl' => 'Отсутствуют',
+
+	'are_you_sure'   => 'Вы уверены?',
+	'version'        => 'Версия',
+	'files_encoding' => 'Кодировка',
+	'back'           => 'Назад',
+
+	'this_is_paid_functionality' => 'Это платный функционал',
+
+	'field_name' => 'Название',
+	'field_code' => 'Код',
+
+	'email_was_sent' => 'Сообщение отправлено',
+
+	'awaiting_confirmation' => 'Ожидает подтверждения',
+
+	'delete_confirmation_title'       => 'Удаление',
+	'delete_confirmation_text'        => 'Уверены?',
+	'delete_confirmation_button_text' => 'Всё-таки удалить',
+];
